@@ -248,7 +248,8 @@ export const extractData = async (files) => {
 
     const words = channels.map((channel) => channel.messages).flat().map((message) => message.words).flat().filter((w) => w.length > /*5*/ 2);
     extractedData.favoriteWords = getFavoriteWords(words);
-    console.log(extractedData.favoriteWords);
+    console.log('Favourite words (all): ', getFavoriteWords(channels.map((channel) => channel.messages).flat().map((message) => message.words).flat()));
+    extractedData.favoriteWords = extractedData.favoriteWords.slice(0, 10);
     for (let wordData of extractedData.favoriteWords) {
         const userID = parseMention(wordData.word);
         if (userID) {
