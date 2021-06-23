@@ -246,8 +246,9 @@ export const extractData = async (files) => {
 
     console.log(`[debug] ${extractedData.guildCount} guilds loaded`);
 
-    const words = channels.map((channel) => channel.messages).flat().map((message) => message.words).flat().filter((w) => w.length > 5);
+    const words = channels.map((channel) => channel.messages).flat().map((message) => message.words).flat().filter((w) => w.length > /*5*/ 2);
     extractedData.favoriteWords = getFavoriteWords(words);
+    console.log(extractedData.favoriteWords);
     for (let wordData of extractedData.favoriteWords) {
         const userID = parseMention(wordData.word);
         if (userID) {

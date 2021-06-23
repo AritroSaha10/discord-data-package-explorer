@@ -40,6 +40,22 @@ export default () => {
             {
                 word: 'DDPE',
                 count: randomNumber(200, 600)
+            },
+            {
+                word: 'adsdas',
+                count: randomNumber(600, 1000)
+            },
+            {
+                word: 'fdsfsdfsd',
+                count: randomNumber(200, 600)
+            },
+            {
+                word: 'dsffsdsfdsdfsdf',
+                count: randomNumber(600, 1000)
+            },
+            {
+                word: 'dsfdsfsfdsffsd',
+                count: randomNumber(200, 600)
             }
         ],
         payments: {
