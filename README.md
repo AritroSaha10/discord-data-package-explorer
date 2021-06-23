@@ -5,11 +5,11 @@
 What's **really** in your Discord Data package? And how can this data be useful? Discord Data Package Explorer does the job for you!
 
 ## Fork Purpose
-This fork just changes the 6 char minimum to 3 chars.
+This fork just changes the 6 char minimum to 3 chars. New link added to README as well.
 
 ## Example
 
-### [DEMO](https://ddpe.androz2091.fr/stats/demo)
+### [DEMO](https://discord-data-package-explorer-fork.vercel.app/)
 
 ![Example](./example.png)
 
