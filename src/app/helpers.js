@@ -30,7 +30,9 @@ export const getFavoriteWords = (words) => {
     
     for (let p in object) array[array.length] = p;
     
-    return array.sort((a, b) => object[b] - object[a]).map((word) => ({ word: word, count: object[word] })).slice(0, 10);
+    const favWords = array.sort((a, b) => object[b] - object[a]).map((word) => ({ word: word, count: object[word] }));
+    console.log('Favourite words (all of them): ', favWords);
+    return favWords.slice(0, 10);
 };
 
 export const getGitHubContributors = () => {
